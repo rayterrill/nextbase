@@ -7,4 +7,5 @@ It also contains the basis for AzureAD authentication, you'll need to create a `
 AZURE_AD_CLIENT_ID=<copy Application (client) ID here>
 AZURE_AD_CLIENT_SECRET=<copy generated client secret value here>
 AZURE_AD_TENANT_ID=<copy the tenant id here>
+NEXTAUTH_SECRET=<some value to encrypt the NextAuth.js JWT,>
 ```
