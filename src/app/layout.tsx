@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Providers } from './providers'
+import { Header } from '@/app/components/Header'
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,7 +20,18 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <Providers>
-          {children}
+          <div className="h-screen flex flex-col">
+            <header className="h-16 flex items-center p-8">
+              <Header />
+            </header>
+            <div className="flex-1 flex flex-col sm:flex-row">
+              <aside className="bg-green-600 sm:w-32 px-8">Left Sidebar</aside>
+              <main className="flex-1 px-2">
+                {children}
+              </main>
+            </div>
+            <footer className="bg-red-600 px-8">Footer</footer>
+          </div>
         </Providers>
       </body>
     </html>
