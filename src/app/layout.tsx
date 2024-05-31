@@ -21,16 +21,16 @@ export default function RootLayout({
       <body className={inter.className}>
         <Providers>
           <div className="h-screen flex flex-col">
-            <header className="h-16 flex items-center p-8">
+            <header className="flex items-center px-8">
               <Header />
             </header>
             <div className="flex-1 flex flex-col sm:flex-row">
               <aside className="bg-green-600 sm:w-32 px-8">Left Sidebar</aside>
-              <main className="flex-1 px-2">
+              <main className="flex-1">
                 {children}
               </main>
             </div>
-            <footer className="bg-red-600 px-8">Footer</footer>
+            <footer className="bg-red-600 px-8 h-25">Footer</footer>
           </div>
         </Providers>
       </body>

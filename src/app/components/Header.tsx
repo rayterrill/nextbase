@@ -3,7 +3,7 @@ import { LoginButton } from "@/app/components/LoginButton";
 
 export const Header = () => {
     return (
-        <Navbar maxWidth={'full'} classNames={{ wrapper: "px-0" }}>
+        <Navbar maxWidth={'full'} classNames={{ wrapper: "px-0" }} height="25px">
           <NavbarBrand>
             NextBase
           </NavbarBrand>
